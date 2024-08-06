@@ -1,0 +1,282 @@
+%% Based off `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%%
+%% Copyright 2010-2017 Raphaël Pinson (raphink@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% Version: 20110122-4
+
+
+\documentclass[11pt,a4paper,nolmodern]{moderncv}
+
+\usepackage{RaphaelPinson}
+\address{Chemin du Jura 3}{1041~Poliez-le-Grand}{Switzerland}
+
+\usepackage[english]{babel}
+\linespread{0.9}
+% for some reason, lines take up a lot of space in itemize in English...
+\newenvironment{tightitemize}
+   {\begin{itemize}
+   \setlength{\parskip}{0pt}}
+   {\end{itemize}}
+
+
+% personal data
+\title{Cloud Native Tech Evangelist}
+\extrainfo{%
+\linkedin~\httplink{www.linkedin.com/in/raphink}\\%
+\octocat~\httplink{www.github.com/raphink}\\%
+Driving License} % optional, remove the line if not wanted
+
+\myquote{Freely you have received, freely give}{Matthew 10:8}
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\setmainfont{Minion Pro}
+\setsansfont{Myriad Pro}
+
+\hyphenpenalty=10000
+\maketitle
+
+
+\section{Experience}
+
+\tlcventry{2022}{0}
+          {Solutions Architect, then Technical Marketing Engineer}
+          {\href{https://isovalent.com}{Isovalent}}
+          {Remote}
+          {}
+          {
+  \begin{itemize}
+    \item \emph{Consulting}\newline
+      I \textbf{supported customers, prospects, and partners} in architecture decisions for 
+      Cilium, Tetragon and Isovalent Enterprise implementation.\newline
+      This activity included onboarding and counseling new customers, via both online and on-site sessions,
+      as well as hosting regular public AMA sessions for prospects.
+    \item \emph{Instruqt Labs}\newline
+      Using the Instruqt platform, I \textbf{built and maintained both public and private
+      technical hands-on labs} to demonstrate and teach Cilium, Tetragon, and eBPF
+      functionalities to prospects, customers, and partners.\newline
+      These labs have been heavily used by Sales Engineers, customers, and partners.
+      I built and supported \textbf{automation} to ease building and updating labs for the TME team.\newline
+      In order to improve the learning experience, I built \textbf{gamified interfaces} for labs,
+      including e.g. exams and badges, an interactive web map to access the labs and view live lab activity,
+      and a holiday calendar for the end-of-year season.\newline
+      These iniatives \textbf{multiplied}
+      the attractivity of the platform and the user's satisfaction with the learning experience.
+    \item \emph{Technical Content}\newline
+      I wrote \textbf{blog posts} and recorded \textbf{videos} about Cilium and Tetragon.
+      I also \textbf{conducted video interviews} with users and customers.
+    \item \emph{Learning Experience}\newline
+      As part of a project to build a learning platform, I conducted \textbf{prospective interviews}
+      with various stakeholders, and built a \textbf{minimal viable product} for a learning platform portal.
+    \item \emph{Workshops}\newline
+      I led workshops —both on-site and online— with prospects and customers,
+      mixing theorical content and hands-on labs.
+    \item \emph{Tooling Improvements}\newline
+      In order to improve internal tooling, I built a system to visualize Kubernetes cluster debug information
+      exported by Cilium using a mock cluster and K9s.
+    \item \emph{Public Speaking}\newline
+      I spoke at \textbf{multiple events} (DevOpsDays, Container Days, KubeCon, etc.) about eBPF,
+      Cilium, and Tetragon.
+  \end{itemize}
+          }
+
+\tlcventry{2012}{2022}
+          {Cloud Native Tech Evangelist}
+          {\href{http://www.camptocamp.com}{Camptocamp}}
+          {Chambéry, then Lausanne}
+          {}
+          {
+  \begin{itemize}
+    \item \emph{Puppet \& Cloud}\newline
+      When I joined Camptocamp, the instructure team's activity focused on
+      managing 500+ servers on behalf of clients, using mainly \textbf{Puppet}, \textbf{OpenVZ}, and \textbf{Amazon Web Services}.
+    \item \emph{Partnerships \& Training}\newline
+      In order to leverage our team's renowned expertise in Puppet,
+      I set up a \textbf{strategic partnership} with Puppet Labs and started teaching the official
+      Puppet curriculum. This required me to be certified by both the \textbf{Puppet Professional} and \textbf{Puppet Developer} certifications.
+      I also wrote our own curriculum based on \textbf{Foreman} for clients using Open Source Puppet, 
+      as well as an \textbf{Augeas} curriculum.\newline
+      Since then, I have been a \textbf{trainer} to many engineers at major banks, universities (EPFL, Unibe), research facilities (CERN, CNRS), and many more.
+    \item \emph{Open Source Work}\newline
+      As our team managed tens of public open-sourced Puppet modules, I strived to improve quality
+      by implementing \textbf{unit and acceptance tests}, publishing on the Puppet forge, and getting approvals by Puppet Labs as standard implementations. I also managed the \textbf{Augeasproviders} project and maintained the Puppet modules associated with it.
+      My Puppet expertise led to many \textbf{consulting} missions, ranging from architecture to migration,
+      as well as specific \textbf{Ruby} development, and earned me a recognition as \textbf{Puppet Champion of the year 2020}, with a title of \textbf{Extraordinary Puppeteer}.
+    \item \emph{Terraform}\newline
+      With our use of public clouds broadening, we switched our provisioning from \textbf{Cloud Formation} to \textbf{Terraform} and contributed multiple providers and modules to the community.
+      I authored \textbf{Terraboard}, a UI to visualize Terraform states, written in \textbf{Go} and \textbf{AngularJS}.
+    \item \emph{Containers \& Orchestration}\newline
+      Around 2014, we moved our Puppet acceptance tests from \textbf{Vagrant} to \textbf{Docker}.
+      We realized Docker's potential, and moved our Puppet stack on top of it.
+      Starting with \textbf{Docker-Compose}, we switched to \textbf{Rancher} in 2015 to scale the infrastructure horizontally, and became \textbf{Rancher Partner}.
+      We wrote containers tools such as \textbf{Bivac}, to automate volumes backup.
+      I migrated the Puppet stack to \textbf{OpenShift} around 2018. \newline
+      \textbf{Kubernetes} expertise is now our main activity. I have co-authored and taught a 5-day curriculum covering Docker and Kubernetes.
+      In the meanwhile, I have contributed to getting Camptocamp set up as one of the first \textbf{Kubernetes Certified Service Provider} (KCSP) in Switzerland and the first \textbf{Kubernetes Training Partner} (KTP) in Europe.\newline
+      I completed the \textbf{OpenShift Administration}, \textbf{CKAD}, \textbf{CKA}, and \textbf{CKS} certification programs.\newline
+      In the last year, I have co-authored the \textbf{DevOps Stack}, a solution integrating \textbf{Terraform}, \textbf{ArgoCD}, \textbf{OIDC},
+      \textbf{Træfik}, \textbf{Cert-Manager}, \textbf{Prometheus}, \textbf{Grafana} and more into a framework to easily provision Kubernetes clusters in a \textbf{GitOps} fashion
+      —using \textbf{GitLab} or \textbf{GitHub Actions} pipelines—
+      on \textbf{Amazon EKS}, \textbf{Azure AKS}, \textbf{Exoscale SKS}, \textbf{Deutsche Telekom CCE}, \textbf{Rancher K3S}, \textbf{Kind}, and more.
+    \item \emph{Sales \& Marketing}\newline
+      As an expert, I have often
+      supported our \textbf{sales force} and contributed to multiple \textbf{tenders}.
+      My attachment to Camptocamp's image and values has also encouraged me to improve \textbf{marketing} (through market studies, newsletters, blog posts, videos, white papers, designing illustrations, totems \& goodies).
+      I have represented Camptocamp at many \textbf{conferences and meetups} (both physical and online) on various subjects (Puppet and its ecosystem, Cloud, DevOps, etc.).
+  \end{itemize}
+}
+
+\tlcventry{2006}{2012}{Systems Engineer}{\href{http://www.orness.com}{ORNESS} then \href{http://www.alten.fr}{Alten}}{Sophia Antipolis}{}{Consultant at France T\'el\'ecom
+\begin{itemize}
+  \item \emph{Cfengine}\newline
+    I was originally hired to migrate about 3000 machines from \textbf{Cfengine} 1 to Cfengine 2.
+    This was an opportunity for me to learn about \textbf{Configuration Management} principles and to discover \textbf{Puppet} and \textbf{Augeas} along the way.
+  \item \emph{Package build farm \& repository}\newline
+    Migration to Cfengine 2 was an opportunity to standardize software packages used.
+    I set up a new automated Debian package repository using \textbf{reprepro}
+    and a \textbf{Debian buildd} farm to compile the packages for multiple distributions and architectures. Both i386 and amd64 builders ran on a single machine, using \textbf{LXC} containers as light virtualization to isolate contexts.\newline
+    I encouraged developers to package their applications and helped them set up \textbf{CI/CD} pipelines using \textbf{Hudson} (now \textbf{Jenkins}) to automatically release their packages to the repository, using \textbf{GnuPG} keys as the authentication layer.\newline
+    In order to encourage good practices, I taught multiple sessions of a \textbf{Debian packaging curriculum} to several internal teams.
+  \item \emph{Gforge}\newline
+    I administered a Gforge platform for hundreds of developers.
+    As part of this task, I set up a replicated fallback server and wrote a CVS replication software using \textbf{Perl}, \textbf{PostgreSQL}, and \textbf{inotify}.
+  \item \emph{Policy Conformity}\newline
+    In order to improve \textbf{conformity} to standards as we adopted \textbf{ITIL} processes,
+    I designed \textbf{Treetester}, a Perl software working as a sieve of tests to identify priority
+    actions to take on machines and platforms and report to platform administrators in a Web UI.
+\end{itemize}
+}
+
+
+\tlcventry{2008}{0}{Developer}{\href{http://www.augeas.net}{Augeas}}{Internet}{}{Development, bugfix and documentation
+\begin{tightitemize}%
+ \item Writing of Augeas lenses;
+ \item Coding in C;
+ \item Improvement of autotools configuration;
+ \item NaturalDocs Integration (documentation generator);
+ \item International Conference Speaker (Belgium (\href{http://archive.fosdem.org/2009/schedule/events/fedora_augeas}{FOSDEM})).
+\end{tightitemize}}
+
+\tlcventry{2005}{0}{\href{https://launchpad.net/~raphink}{Developer/Maintainer}}{\href{http://www.ubuntu.com}{Ubuntu}}{Internet}{}{Development, bugfix and documentation
+\begin{tightitemize}%
+ \item Creation, maintenance and review of software packages;
+ \item Writing of technical documentation for developers;
+ \item Maintenance of the QA system for software package;
+ \item Bug management;
+ \item International Conference Speaker (Hungary, Germany (\href{http://www.linuxtag.org/}{LinuxTag})).
+\end{tightitemize}}
+
+
+\tlcventry{2005}{0}{Open-Source Contributor}{Various projects}{Internet}{}{%
+\begin{tightitemize}%
+ %\item \href{https://launchpad.net/wavebiblebot}{Flammard Bible Bot}: Google Wave Bot, a personal project written in Python/AppEngine;
+ %\item \href{http://www.ichthux.com}{Ichthux}: Creation and maintenance of a specialized Linux distribution based on Ubuntu;
+ %\item \href{https://launchpad.net/byobu}{Byobu}: contribution of scripts and patches in Python and Bash;
+ \item \href{http://search.cpan.org/~raphink}{CPAN Author}: maintainer of several Perl modules on CPAN;
+ \item \href{http://www.ctan.org/author/id/pinson}{CTAN Author}: maintainer of several \LaTeX{} packages on CTAN.
+\end{tightitemize}}
+
+
+\subsection{Other Experience}
+
+\tlcventry{2009}{0}{Translator and Editor}{La Colombe Calvary}{Nice}{}{%
+\begin{tightitemize}%
+ \item Translation of English theology books into French;
+ \item Edition of books using \LaTeX{}, \XeTeX{} and \LuaTeX{};
+ \item Publishing of books using on-demand publishing services (CreateSpace and Lulu).
+\end{tightitemize}}
+
+% Restore normal labels
+%\tltext{\scriptsize}
+
+%\tldatelabelcventry{2004}{July 2004}{Blue Collar Internship}{\href{http://www.snecma.com}{SNECMA}}{Moissy-Cramayel}{}{Assembled and equilibrated turbo reactors for planes}
+
+%\tldatelabelcventry{2002}{Summer 2002}{Fire Safety Officer}{\href{http://www.euroguard.fr/}{Euroguard}}{Marcoussis}{}{Supervised an Alcatel research site}
+
+%\tldatelabelcventry{2001}{Summer 2001}{Surveillance Agent}{Penauille Polys\'ecurit\'e}{Paris}{}{Supervised the headquarters of the French Red Cross}
+
+%\tllabelcventry{1999}{2000}{1999--2000}{Certified First Responder}{\href{http://www.croix-rouge.fr/}{French Red Cross}}{Paris Suburbs}{}{Served in several volunteer missions as a paramedic}
+
+
+\pagebreak
+
+\section{Education}
+
+\tldatecventry{2013}{Puppet Trainer}{\href{https://puppetlabs.com/services/puppet-training/}{PuppetLabs}}{Amsterdam}{}{Official Training Partner for PuppetLabs' courses (Puppet Fundamentals, Puppet Advanced, Extending Puppet with Ruby)}
+
+\tldatecventry{2009}{ITIL{\LARGE\textregistered} v3 Foundation}{\href{http://www.itil-officialsite.com/home/home.asp}{EXIN}}{Sophia Antipolis}{}{Organization and efficiency of the Information System}
+
+\tldatecventry{2005}{Student in Business Creation and Management}{\href{http://www.creation-transmission.com/}{Cr\'eafort}}{Poitiers}{}{Accounting, Management, Marketing, Law}
+
+\tldatecventry{2005}{Student in Pedagogy (`Gestion Mentale')}{\href{http://www.ifgm.org/}{IFGM}}{Bordeaux}{}{Pedagogy, Didacticism, Cognitive Psychology}
+
+\tllabelcventry{2003}{2005}{2003--2005}{Student in Mechanical Engineering}{\newline\href{http://www.ensma.fr}{\'Ecole Nationale Sup\'erieure de M\'ecanique et d'A\'erotechnique (ENSMA)}}{Poitiers}{}{Solid \& Fluid Mechanics, Mathematics, Combusion \& Propulsion, Materials Science, Automation, Signal Processing, Computer Sciences, Management}
+
+\tldatecventry{2004}{Licence, equivalent of a British Bsc, in Mechanics}{\href{http://www.univ-poitiers.fr/}{Universit\'e de Poitiers}}{Poitiers}{}{Solid \& Fluid Mechanics, Mathematics, Combusion \& Propulsion, Materials Science, Automation, Signal Processing, Computer Sciences, Management}
+
+\tllabelcventry{2002}{2003}{2002--2003}{Student in Chemistry}{\href{http://www.u-psud.fr}{Universit\'e de Paris XI}}{Orsay}{}{Chemistry, Physics, Mathematics}
+
+
+
+
+\section{Certifications}
+
+\tldatecventry{2021}{Certified Kubernetes Security Specialist (CKS)}{\href{https://training.linuxfoundation.org/certification/verify/}{CNCF}}{LF-xpar0qezpj}{}{Kubernetes}
+
+\tldatecventry{2020}{Certified Kubernetes Application Developer (CKAD)}{\href{https://training.linuxfoundation.org/certification/verify/}{CNCF}}{LF-gikljn6k0e}{}{Kubernetes}
+
+\tldatecventry{2019}{Red Hat Certified Specialist in OpenShift Administration}{\href{https://www.redhat.com/en/services/training/ex280-red-hat-certified-specialist-in-openshift-administration-exam}{Red Hat}}{190-035-931}{}{OpenShift}
+
+\tldatecventry{2018}{Certified Kubernetes Administrator (CKA)}{\href{https://training.linuxfoundation.org/certification/verify/}{CNCF}}{LF-vqymlq6gyo}{}{Kubernetes}
+
+\tldatecventry{2013}{Puppet Certified Developer}{\href{https://puppetlabs.com/services/certification/puppet-developer/}{PuppetLabs}}{PCD0000011}{}{Puppet IT automation software}
+
+\tldatecventry{2013}{Puppet Certified Professional}{\href{https://puppetlabs.com/services/certification/puppet-professional/}{PuppetLabs}}{PCP0000116}{}{Puppet IT automation software}
+
+\tldatecventry{2009}{ITIL{\LARGE\textregistered} v3 Foundation Examination}{\href{http://www.itil-officialsite.com/home/home.asp}{EXIN}}{00055512}{}{Organization and efficiency of the Information System}
+
+
+\section{Foreign Languages}
+\cvlanguage{French}{Native}{Mother Tongue}
+\cvlanguage{English}{Fluent}{Daily practice, conferences given in English}
+\cvlanguage{Spanish}{Good Level}{Occasional practice}
+\cvlanguage{German}{Good Level}{Studied 9 years in school}
+%\cvlanguage{Russian}{Intermediary Level}{Studied 3 years in school}
+%\cvlanguage{Dutch}{Beginner}{Studied alone}
+%\cvlanguage{Swedish}{Beginner}{Studied alone}
+
+\section{Personal interests}
+
+\cvhobby{Music}{Clarinet, guitar, piano, organ, saxophone}
+\cvhobby{Sports}{Hiking, sailing, golf, climbing}
+\cvhobby{Others}{Genealogy, reading}
+
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
